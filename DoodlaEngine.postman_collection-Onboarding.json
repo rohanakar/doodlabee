@@ -1,0 +1,218 @@
+{
+	"info": {
+		"_postman_id": "ef26c4cb-c5f2-4c14-98ab-e3cafe976e94",
+		"name": "DoodlaEngine",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login - Email/pwd",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"test002@gmail.com\",\r\n    \"password\": \"test124\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{HOST}}:{{PORT}}/v1/onbaording/login",
+					"host": [
+						"{{HOST}}"
+					],
+					"port": "{{PORT}}",
+					"path": [
+						"v1",
+						"onbaording",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login - SSO - GMAIL",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"deviceId\": \"123\",\r\n  \"dob\": \"09/08/1997\",\r\n  \"email\": \"rishabh3@gmail.com\",\r\n  \"fbUUID\": null,\r\n  \"firstName\": \"rishabh\",\r\n  \"gmailUUID\": \"gmail--100220012gmamam\",\r\n  \"iosUUID\": null,\r\n  \"lastName\": \"chaudhary\",\r\n  \"phone\": \"7002003044\",\r\n  \"phoneUUID\": null,\r\n  \"profileImage\": null,\r\n  \"tagLine\": null\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{HOST}}:{{PORT}}/v1/onbaording/login/sso",
+					"host": [
+						"{{HOST}}"
+					],
+					"port": "{{PORT}}",
+					"path": [
+						"v1",
+						"onbaording",
+						"login",
+						"sso"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login - SSO - FB",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"deviceId\": \"123\",\r\n  \"dob\": \"09/08/1997\",\r\n  \"email\": \"rishabhc329@gmail.com\",\r\n  \"fbUUID\": \"5010021fbbfbfb\",\r\n  \"firstName\": \"rishabh\",\r\n  \"gmailUUID\": null,\r\n  \"iosUUID\": null,\r\n  \"lastName\": \"chaudhary\",\r\n  \"phone\": \"7002003044\",\r\n  \"phoneUUID\": null,\r\n  \"profileImage\": null,\r\n  \"tagLine\": null\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{HOST}}:{{PORT}}/v1/onbaording/login/sso",
+					"host": [
+						"{{HOST}}"
+					],
+					"port": "{{PORT}}",
+					"path": [
+						"v1",
+						"onbaording",
+						"login",
+						"sso"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register - Email/pwd",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"test002@gmail.com\",\r\n  \"password\": \"test123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/v1/onbaording/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"onbaording",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login - SSO - IOS",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"deviceId\": \"123\",\r\n  \"dob\": \"09/08/1997\",\r\n  \"email\": \"rishabhc329@gmail.com\",\r\n  \"fbUUID\": null,\r\n  \"firstName\": \"rishabh\",\r\n  \"gmailUUID\": null,\r\n  \"iosUUID\": \"12321iosios\",\r\n  \"lastName\": \"chaudhary\",\r\n  \"phone\": \"7002003044\",\r\n  \"phoneUUID\": null,\r\n  \"profileImage\": null,\r\n  \"tagLine\": null\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{HOST}}:{{PORT}}/v1/onbaording/login/sso",
+					"host": [
+						"{{HOST}}"
+					],
+					"port": "{{PORT}}",
+					"path": [
+						"v1",
+						"onbaording",
+						"login",
+						"sso"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login - SSO - Phone",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"deviceId\": \"123\",\r\n  \"dob\": \"09/08/1997\",\r\n  \"email\": \"rishabhc329@gmail.com\",\r\n  \"fbUUID\": null,\r\n  \"firstName\": \"rishabh\",\r\n  \"gmailUUID\": null,\r\n  \"iosUUID\": null,\r\n  \"lastName\": \"chaudhary\",\r\n  \"phone\": \"7002003044\",\r\n  \"phoneUUID\": \"21321312imeietc\",\r\n  \"profileImage\": null,\r\n  \"tagLine\": null\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{HOST}}:{{PORT}}/v1/onbaording/login/sso",
+					"host": [
+						"{{HOST}}"
+					],
+					"port": "{{PORT}}",
+					"path": [
+						"v1",
+						"onbaording",
+						"login",
+						"sso"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "HOST",
+			"value": "localhost"
+		},
+		{
+			"key": "PORT",
+			"value": "8080"
+		}
+	]
+}
