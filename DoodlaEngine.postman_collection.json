@@ -1,0 +1,547 @@
+{
+	"info": {
+		"_postman_id": "ef26c4cb-c5f2-4c14-98ab-e3cafe976e94",
+		"name": "DoodlaEngine",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Onboarding",
+			"item": [
+				{
+					"name": "Login - Email/pwd",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"test002@gmail.com\",\r\n    \"password\": \"test123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{HOST}}:{{PORT}}/v1/onbaording/login",
+							"host": [
+								"{{HOST}}"
+							],
+							"port": "{{PORT}}",
+							"path": [
+								"v1",
+								"onbaording",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login - SSO - GMAIL",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"deviceId\": \"123\",\r\n  \"dob\": \"09/08/1997\",\r\n  \"email\": \"rishabh3@gmail.com\",\r\n  \"fbUUID\": null,\r\n  \"firstName\": \"rishabh\",\r\n  \"gmailUUID\": \"gmail--100220012gmamam\",\r\n  \"iosUUID\": null,\r\n  \"lastName\": \"chaudhary\",\r\n  \"phone\": \"7002003044\",\r\n  \"phoneUUID\": null,\r\n  \"profileImage\": null,\r\n  \"tagLine\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{HOST}}:{{PORT}}/v1/onbaording/login/sso",
+							"host": [
+								"{{HOST}}"
+							],
+							"port": "{{PORT}}",
+							"path": [
+								"v1",
+								"onbaording",
+								"login",
+								"sso"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login - SSO - FB",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"deviceId\": \"123\",\r\n  \"dob\": \"09/08/1997\",\r\n  \"email\": \"rishabhc329@gmail.com\",\r\n  \"fbUUID\": \"5010021fbbfbfb\",\r\n  \"firstName\": \"rishabh\",\r\n  \"gmailUUID\": null,\r\n  \"iosUUID\": null,\r\n  \"lastName\": \"chaudhary\",\r\n  \"phone\": \"7002003044\",\r\n  \"phoneUUID\": null,\r\n  \"profileImage\": null,\r\n  \"tagLine\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{HOST}}:{{PORT}}/v1/onbaording/login/sso",
+							"host": [
+								"{{HOST}}"
+							],
+							"port": "{{PORT}}",
+							"path": [
+								"v1",
+								"onbaording",
+								"login",
+								"sso"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register - Email/pwd",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"test002@gmail.com\",\r\n  \"password\": \"test123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{HOST}}:{{PORT}}/v1/onbaording/register",
+							"host": [
+								"{{HOST}}"
+							],
+							"port": "{{PORT}}",
+							"path": [
+								"v1",
+								"onbaording",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login - SSO - IOS",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"deviceId\": \"123\",\r\n  \"dob\": \"09/08/1997\",\r\n  \"email\": \"rishabhc329@gmail.com\",\r\n  \"fbUUID\": null,\r\n  \"firstName\": \"rishabh\",\r\n  \"gmailUUID\": null,\r\n  \"iosUUID\": \"12321iosios\",\r\n  \"lastName\": \"chaudhary\",\r\n  \"phone\": \"7002003044\",\r\n  \"phoneUUID\": null,\r\n  \"profileImage\": null,\r\n  \"tagLine\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{HOST}}:{{PORT}}/v1/onbaording/login/sso",
+							"host": [
+								"{{HOST}}"
+							],
+							"port": "{{PORT}}",
+							"path": [
+								"v1",
+								"onbaording",
+								"login",
+								"sso"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login - SSO - Phone",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"deviceId\": \"12\",\r\n  \"dob\": \"09/08/1997\",\r\n  \"email\": \"test2\",\r\n  \"fbUUID\": null,\r\n  \"firstName\": \"rishabh\",\r\n  \"gmailUUID\": null,\r\n  \"iosUUID\": null,\r\n  \"lastName\": \"chaudhary\",\r\n  \"phone\": \"7002003066\",\r\n  \"phoneUUID\": \"123\",\r\n  \"profileImage\": \"test\",\r\n  \"tagLine\": null,\r\n  \"interests\":[\r\n      \"TRAVEL\",\r\n      \"RELAX\"\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{HOST}}:{{PORT}}/v1/onbaording/login/sso",
+							"host": [
+								"{{HOST}}"
+							],
+							"port": "{{PORT}}",
+							"path": [
+								"v1",
+								"onbaording",
+								"login",
+								"sso"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET LOGGED IN USER",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{BEARER_TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{HOST}}:{{PORT}}/v1/users/user",
+							"host": [
+								"{{HOST}}"
+							],
+							"port": "{{PORT}}",
+							"path": [
+								"v1",
+								"users",
+								"user"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "GET User with ID",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{BEARER_TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{HOST}}:{{PORT}}/v1/users/user/2",
+							"host": [
+								"{{HOST}}"
+							],
+							"port": "{{PORT}}",
+							"path": [
+								"v1",
+								"users",
+								"user",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Experience",
+			"item": [
+				{
+					"name": "Create Experience",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{BEARER_TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"activities\": [\r\n    {\r\n      \"images\": [\r\n        {\r\n          \"coverImage\": true,\r\n          \"imageData\": \"img1\",\r\n          \"private\": true\r\n        },\r\n        {\r\n          \"coverImage\": false,\r\n          \"imageData\": \"img2\",\r\n          \"private\": false\r\n        },\r\n        {\r\n          \"coverImage\": false,\r\n          \"imageData\": \"img3\",\r\n          \"private\": false\r\n        }\r\n      ],\r\n      \"location\": \"loc1\",\r\n      \"tips\": [\r\n        {\r\n          \"mustDo\": \"visit stuff\",\r\n          \"price\": \"54\",\r\n          \"recommendation\": \"nagpur\",\r\n          \"security\": \"yes\",\r\n          \"tip\": \"xyz\"\r\n        }\r\n      ],\r\n      \"title\": \"backchodi\"\r\n    }\r\n  ],\r\n  \"allowSuggestions\": true,\r\n  \"date\": \"15/aug\",\r\n  \"experienceClosed\": true,\r\n  \"iternary\": true,\r\n  \"iviteOpenTo\": \"FRIENDS\",\r\n  \"location\": \"string\",\r\n  \"name\": \"string\",\r\n  \"recieveFeedUpdates\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{HOST}}:{{PORT}}/v1/experience/create",
+							"host": [
+								"{{HOST}}"
+							],
+							"port": "{{PORT}}",
+							"path": [
+								"v1",
+								"experience",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete exprience",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{BEARER_TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"activities\": [\r\n    {\r\n      \"images\": [\r\n        {\r\n          \"coverImage\": true,\r\n          \"imageData\": \"img1\",\r\n          \"private\": true\r\n        }\r\n      ],\r\n      \"location\": \"loc1\",\r\n      \"tips\": [\r\n        {\r\n          \"mustDo\": \"visit stuff\",\r\n          \"price\": \"54\",\r\n          \"recommendation\": \"nagpur\",\r\n          \"security\": \"yes\",\r\n          \"tip\": \"xyz\"\r\n        }\r\n      ],\r\n      \"title\": \"backchodi\"\r\n    }\r\n  ],\r\n  \"allowSuggestions\": true,\r\n  \"date\": \"15/aug\",\r\n  \"experienceClosed\": true,\r\n  \"iternary\": true,\r\n  \"iviteOpenTo\": \"FRIENDS\",\r\n  \"location\": \"string\",\r\n  \"name\": \"string\",\r\n  \"recieveFeedUpdates\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{HOST}}:{{PORT}}/v1/experience/delete/1",
+							"host": [
+								"{{HOST}}"
+							],
+							"port": "{{PORT}}",
+							"path": [
+								"v1",
+								"experience",
+								"delete",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Experience by Id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{BEARER_TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"activities\": [\r\n    {\r\n      \"images\": [\r\n        {\r\n          \"coverImage\": true,\r\n          \"imageData\": \"img1\",\r\n          \"private\": true\r\n        }\r\n      ],\r\n      \"location\": \"loc1\",\r\n      \"tips\": [\r\n        {\r\n          \"mustDo\": \"visit stuff\",\r\n          \"price\": \"54\",\r\n          \"recommendation\": \"nagpur\",\r\n          \"security\": \"yes\",\r\n          \"tip\": \"xyz\"\r\n        }\r\n      ],\r\n      \"title\": \"backchodi\"\r\n    }\r\n  ],\r\n  \"allowSuggestions\": true,\r\n  \"date\": \"15/aug\",\r\n  \"experienceClosed\": true,\r\n  \"iternary\": true,\r\n  \"iviteOpenTo\": \"FRIENDS\",\r\n  \"location\": \"string\",\r\n  \"name\": \"string\",\r\n  \"recieveFeedUpdates\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{HOST}}:{{PORT}}/v1/experience/2",
+							"host": [
+								"{{HOST}}"
+							],
+							"port": "{{PORT}}",
+							"path": [
+								"v1",
+								"experience",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Activity",
+			"item": [
+				{
+					"name": "Like activity",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiZXhwIjoxNjI5MTE2NjczfQ.iRi1bYZ2kqzNWWl6FjVek8thAStrtoHT3jY1jwIkUFOHNozMFzW8FeNAf_Bl32ZRJ8gVSziW4Gsy-XMOAmOjmw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{HOST}}:{{PORT}}/v1/activity/like/2",
+							"host": [
+								"{{HOST}}"
+							],
+							"port": "{{PORT}}",
+							"path": [
+								"v1",
+								"activity",
+								"like",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "unLike activity",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwiZXhwIjoxNjI5MTE2NjczfQ.iRi1bYZ2kqzNWWl6FjVek8thAStrtoHT3jY1jwIkUFOHNozMFzW8FeNAf_Bl32ZRJ8gVSziW4Gsy-XMOAmOjmw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{HOST}}:{{PORT}}/v1/activity/unLike/2",
+							"host": [
+								"{{HOST}}"
+							],
+							"port": "{{PORT}}",
+							"path": [
+								"v1",
+								"activity",
+								"unLike",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "view all activities by current user",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{BEARER_TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{HOST}}:{{PORT}}/v1/activity/activities/me",
+							"host": [
+								"{{HOST}}"
+							],
+							"port": "{{PORT}}",
+							"path": [
+								"v1",
+								"activity",
+								"activities",
+								"me"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "view all activities in experience",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{BEARER_TOKEN}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{HOST}}:{{PORT}}/v1/activity/activities/me",
+							"host": [
+								"{{HOST}}"
+							],
+							"port": "{{PORT}}",
+							"path": [
+								"v1",
+								"activity",
+								"activities",
+								"me"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "HOST",
+			"value": "http://18.188.75.102"
+		},
+		{
+			"key": "PORT",
+			"value": "8080"
+		},
+		{
+			"key": "BEARER_TOKEN",
+			"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI2IiwiZXhwIjoxNjI4NTI4MTEzfQ.PGaqaDx3-stZvGNiUI8DPJXSbVL9bb5RpCMXWxwuajga1gSgVixmdMxY6PRs-1a0RKw50FVOWV4eWWmHbeZ4Fg"
+		}
+	]
+}
